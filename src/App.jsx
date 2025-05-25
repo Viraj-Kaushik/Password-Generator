@@ -56,27 +56,27 @@ function App() {
   return (
     <>
 
-      <div class="container">
+      <div className="container">
 
         <h1>Generate a 
         <br/>
         <p id="line2">Random Password</p></h1>
 
-        <div class="displayy">
+        <div className="displayy">
 
-            <div class="password">
+            <div className="password">
 
                 <input type="text" id="pass" placeholder="Password" value={password} ref={passwordRef}/>
             
-                <img onClick={copyPass} id="copy" src="assets/copy.png" alt="copy"/>
+                <img onClick={copyPass} id="copy" src="/assets/copy.png" alt="copy"/>
 
             </div>
 
             {/* mid bar of variables */}
 
-          <div class= "variables">
+          <div className= "variables">
 
-                <div class = "length">
+                <div className = "length">
 
                     <input 
                     type="range"
@@ -97,7 +97,7 @@ function App() {
             {/* checkboxes */}
 
 
-            <div class="numbers">
+            <div className="numbers">
                 <input type="checkbox" id='numberAllowed'
                 checked={numberAll} 
                 onChange={() => {
@@ -107,7 +107,7 @@ function App() {
                 <label htmlFor="numberAllowed">Include Numbers</label>
             </div>
 
-            <div class="chars">
+            <div className="chars">
                 <input type="checkbox" id='charsAllowed' 
                 checked={charAll}
                 onChange={() => {
