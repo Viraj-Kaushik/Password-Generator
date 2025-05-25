@@ -1,0 +1,144 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+body{
+    background-color: #002339;
+    color: #fff;
+}
+
+#line2{
+    color: #019f55;
+}
+
+.container{
+    margin: 12%;
+}
+
+#copy{
+    height: 30px;
+}
+
+.password{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #333;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#pass{
+    height: 30px;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.btn{
+    margin-top: 20px;
+    /* font-size: 2rem; */
+    display: flex;
+    background-color: #019f55;
+    width: 180px;
+    padding: 7px;
+    justify-content: space-evenly;
+}
+
+#generate{
+    background-color: #019f55;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+#genPic{
+    height: 30px;
+}
+
+/* mid box  */
+
+.variables{
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #019f55;
+    border-radius: 5px;
+    justify-content: space-around;
+    width: 700px;
+}
+
+#lbl{
+    margin-left: 10px;
+}
+
+#numberAllowed{
+    transform: scale(1.3);
+    margin-right: 6px;
+}
+
+#charsAllowed{
+    transform: scale(1.3);
+    margin-right: 6px;
+}
+
+
+/* to make it responsive */
+
+@media (max-width: 768px) {
+  .container {
+    margin: 5%;
+    padding: 1rem;
+  }
+
+  .password {
+    width: 100%;
+    font-size: 1.2rem;
+    flex-direction: row;
+    padding: 0.5rem;
+  }
+
+  #pass {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .variables {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .length,
+  .numbers,
+  .chars {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  #copy {
+    height: 24px;
+  }
+
+  #numberAllowed,
+  #charsAllowed {
+    transform: scale(1.1);
+  }
+}
