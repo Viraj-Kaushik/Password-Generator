@@ -1,12 +1,6 @@
 {
-  "buildCommand": "npm install --include=optional && npm run build",
-  "installCommand": "npm install --include=optional",
+  "buildCommand": "npm install @rollup/rollup-linux-x64-gnu --save-optional && npm run build",
   "env": {
     "NPM_CONFIG_OPTIONAL": "true"
-  },
-  "build": {
-    "env": {
-      "NODE_VERSION": "18"
-    }
   }
 }
