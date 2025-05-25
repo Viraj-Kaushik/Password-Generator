@@ -1,0 +1,3 @@
+{
+  "buildCommand": "npm ci --include=optional && npm run build"
+}
