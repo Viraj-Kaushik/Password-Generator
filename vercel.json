@@ -1,6 +1,12 @@
 {
   "buildCommand": "npm install --include=optional && npm run build",
+  "installCommand": "npm install --include=optional",
   "env": {
     "NPM_CONFIG_OPTIONAL": "true"
+  },
+  "build": {
+    "env": {
+      "NODE_VERSION": "18"
+    }
   }
 }
